@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us</title>
+</head>
+
+<style type="text/css">
+
+    *{
+        margin: 0;
+        font-family:Arial;
+        border: border-box;
+    }
+    
+    .navbar
+    {
+        height: 75px;
+        background-color: #121212;
+        color: white;
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .nav-logo{
+        height:50px;
+        width:100px;
+    }
+    .logo
+    {
+        font-weight: 1000;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+    }
+    
+    .logo p{
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    
+    .border{
+        border: 1.5px solid transparent;
+    }
+    
+    .border:hover{
+        border: 1.5px solid white;
+    }
+    
+    /** box2 **/
+    .first{
+        color: #cccccc;
+        font-size: 0.85rem;
+        margin-left:15px;
+    }
+    
+    .second{
+        font-size: 1rem;
+        margin-left:3px;
+    }
+    
+    .add-icon{
+        display: flex;
+        align-items:center;
+    }
+    
+    /** box 3 **/
+    .nav-search{
+        display:flex;
+        justify-content:space-evenly;
+        background-color: pink;
+        width : 620px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    
+    /* .search-select{
+        background-color: #f3f3f3;
+        width: 85px;
+        text-align: left;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: none; 
+    } */
+    
+    .search-input{
+        width: 100%;
+        font-size:1rem;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: none;
+    }
+    
+    .search-icon{
+        width:45px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        background-color:white;/** febd68**/
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: #0f1111;
+    }
+    
+    .nav-search:hover{
+        border: 3px solid white;
+    }
+    
+    /** box 4 **/
+    span{
+        font-size: 0.7rem;
+    }
+    
+    .sec{
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+    
+    .sec a{
+        color: rgb(11, 152, 229);
+    }
+    
+    /** box 6 **/
+    
+    .nav-cart i{
+        font-size: 28px;
+    
+    }
+    
+    .nav-cart{
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+    
+    /** panel **/
+    
+    .panel{
+        height: 10px;
+        background-color: whitesmoke;
+        display: flex;
+        color: black;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .panel-ops p{
+        display:inline;
+        margin-left:15px;    
+    }
+    
+    .panel-ops{
+        width:70%;
+        font-size: 0.75rem;
+    }
+    
+    .panel-deals{
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    
+
+.about{
+    background-color: whitesmoke;
+    color: black;
+    padding-left: 3rem;
+    padding-right: 2rem;
+}
+
+.footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    background-color:#000000   ;
+    color: white;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1rem;
+}
+
+.foot-panel2{
+    background-color: 	#080808 ;
+    color: white;
+    height:400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+    display: block;
+}
+
+ul a{
+    display:block;
+    font-size: 0.85rem;
+    margin-top: 20px;
+    color:#dddddd;
+
+}
+
+.foot-panel3{
+    background-color: #101010 ;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.foot-panel3 i
+{
+    background-size: cover;
+    font-size: 2.5rem;
+    height:50px;
+    width:100px;
+}
+
+.foot-panel3 p{
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.foot-panel4{
+    background-color: 	#181818 ;
+    color:white;
+    height:80px;
+    font-size: 0.7rem;
+    text-align: center;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.pages{
+    padding-top: 25px;
+}
+
+.copyright{
+    padding-top: 5px;
+}
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="nav-logo">
+          <div class="logo">
+              <i class="fa-solid fa-shoe-prints"></i>
+              <p>  ShoeFy</p>
+          </div>
+        </div>
+  
+        <div class="nav-address">
+          <p class="first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="second">India</p></div>
+        </div>
+  
+        <div class="nav-search">
+          <!-- <select class="search-select">
+            <option>All</option>
+            <option>Casual Footwear</option>
+            <option>Sports & Athletic Footwear</option>
+            <option>Women's Special Footwear</option> 
+            <option>Sandals & Flip-Flops</option>
+            <option>Men's Special Footwear</option> 
+            <option>Kids' Footwear</option> 
+            <option>Specialty Footwear</option> 
+            <option>Seasonal Footwear</option> 
+  
+          </select> -->
+          <input placeholder="Search ShoeFy" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+         </div>
+  
+         <div class="nav-signin border">
+          <p><span>Hello, </span></p>
+          <p class="sec"><a href="http://localhost/shopping_shoe/index.php">Sign-In</a></p>
+         </div>  
+  
+         <div class="nav-return border">
+          <p><span>Returns</span></p>
+          <p class="sec">& Orders</p>
+         </div> 
+  
+         <div class="nav-cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+         </div>
+      </div>
+  
+      <div class="panel">
+        <!-- <div class="panel-all">
+          <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+        <div class="panel-ops border">
+          <p.border>Customer Service</p>
+          <p.border>Register</p>
+          <p.border>Gift Cards</p>
+          <p.border>Sell</p>
+        </div>
+  
+        <div class="panel-deals border">
+          Deal for the day
+        </div> -->
+       </div>
+       <div class="about">
+        <br>
+    <p><h1><center>About ShoeFy</center></h1><br><br>
+
+        Welcome to ShoeFy, where every step is a journey towards style, comfort, and confidence. Our passion for footwear drives us to curate a collection that is as diverse and dynamic as our customers. At ShoeFy, we understand that shoes are more than just a necessity—they are an expression of your individuality and an essential part of your lifestyle.
+        <br><br>
+        <h3>Our Story</h3>
+        
+        ShoeFy was founded with a simple yet powerful vision: to transform the way people shop for shoes online. We saw the need for an e-commerce platform that not only offers a vast array of footwear options but also prioritizes quality, comfort, and customer satisfaction. With this vision in mind, ShoeFy was born, combining a love for fashion with a commitment to excellence.
+        <br><br>
+        <h3>Our Mission</h3>
+        
+        Our mission is to become your go-to destination for all your footwear needs. We aim to provide an unparalleled shopping experience by offering:
+        <BR>
+        - An Extensive Selection: Our catalog features a wide range of styles, from the latest sneaker releases to timeless dress shoes, rugged outdoor boots, and chic sandals. Whether you're looking for casual everyday wear, office-appropriate footwear, or something special for an event, ShoeFy has it all.
+       <br> 
+        - Quality and Comfort: We believe that great shoes should feel as good as they look. That's why we partner with renowned brands and emerging designers who share our dedication to craftsmanship and comfort. Each pair of shoes is carefully selected to ensure it meets our high standards of durability and style.
+        <br>
+        - Fashion Forward: Stay ahead of the trends with our constantly updated collections. We keep a close eye on the latest fashion movements to bring you shoes that are both current and classic, so you can always step out in confidence.
+        <br><br>
+       <h3> Our Values</h3>
+        
+        At ShoeFy, we hold ourselves to the highest standards of service and integrity. Our core values include:
+        <br>
+        - Customer-Centric Approach: Your satisfaction is our top priority. Our dedicated customer service team is here to provide personalized assistance, whether you need help choosing the right size, tracking your order, or navigating our website.
+        <br>
+        - Sustainability: We are committed to sustainable practices and seek out brands that share this commitment. From eco-friendly materials to ethical manufacturing processes, we aim to make a positive impact on the environment.
+        
+        <br>- Innovation: We continually strive to enhance your shopping experience with cutting-edge technology. Our user-friendly website features intuitive navigation, detailed product descriptions, and high-quality images, making it easy to find exactly what you're looking for.
+        <br><br>
+        <h3>Why Choose ShoeFy?</h3>
+        
+        - Exclusive Collections: Discover unique and exclusive styles that you won't find anywhere else. Our partnerships with designers and brands ensure a curated selection that caters to diverse tastes.
+        <br>
+        - Easy Returns and Exchanges: We want you to love your purchase. If you're not completely satisfied, our hassle-free return and exchange policy ensures you can shop with confidence.
+        <br>
+        - Secure Shopping: Your privacy and security are paramount. We use advanced encryption and secure payment gateways to protect your personal information.
+        <br><br>
+        <h3>Join the ShoeFy Community</h3>
+        
+        Step into a world of endless possibilities with ShoeFy. Follow us on social media for the latest updates, style inspiration, and exclusive promotions. Subscribe to our newsletter to be the first to know about new arrivals and special offers.
+        <br>
+        Thank you for choosing ShoeFy. We are excited to be part of your journey, one step at a time. Discover your perfect fit today and experience the difference with ShoeFy.</p>
+     <br><br>   
+    </div>
+        <footer>
+            <div class="foot-panel1">
+              <a href="">Back to top</a>
+            </div>
+            <div class="foot-panel2">
+              <ul>
+                <p>Get to Know Us</p>
+                <a href="about.html">About Us</a>
+                <a href="">Careers</a>
+                <a href="">Press Releases</a>
+                <a href="">ShoeFy Science</a>
+              </ul>
+    
+              <ul>
+                <p>Connect with Us</p>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">LinkedIn</a>
+              </ul>
+    
+              <ul>
+                <p>Make Money with Us</p>
+                <a href="">Sell on ShoeFy</a>
+                <a href="">Sell under ShoeFy Accelerator</a>
+                <a href="">Protect and Build Your Brand</a>
+                <a href="">ShoeFy Global Selling</a>
+                <a href="">Become an Affiliate</a>
+                <a href="">Fulfilment by ShoeFy</a>
+                <a href="">Advertise Your Products</a>
+                <a href="">ShoeFy Pay on Merchants</a>
+              </ul>
+    
+              <ul>
+                <p>Let Us Help You</p>
+                <a href="">COVID-19 and ShoeFy</a>
+                <a href="">Your Account</a>
+                <a href="">100% Purchase Protection</a>
+                <a href="">ShoeFy App Download</a>
+                <a href="">Help</a>
+              </ul>
+            </div>
+    
+            <div class="foot-panel3">
+              <i class="fa-solid fa-shoe-prints"></i>
+              <p>ShoeFy</p>
+            </div>
+    
+            <div class="foot-panel4">
+              <div class="pages">
+                <a href="">Conditions of use</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Yours Ads Privacy Choices</a>
+              </div>
+              <div class="copyright">
+                © 1996-2024, ShoeFy.com, Inc. or its affiliates
+    
+              </div>
+</body>
+</html>
+
+
+
